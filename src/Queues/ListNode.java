@@ -1,4 +1,10 @@
 package Queues;
 
-public class ListNode {
+class ListNode {
+    int value;
+    ListNode next;
+    ListNode(int value) {
+        this.value = value;
+        next = null;
+    }
 }

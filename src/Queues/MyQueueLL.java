@@ -2,11 +2,11 @@ package Queues;
 
 import java.util.NoSuchElementException;
 
-public class MyQueue {
+public class MyQueueLL {
     ListNode head;
     ListNode tail;
     int size;
-    MyQueue() {
+    MyQueueLL() {
         this.size = 0;
     }
     boolean isEmpty() {

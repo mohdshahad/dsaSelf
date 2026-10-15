@@ -1,6 +1,6 @@
 package Stacks;
 
-class ListNode {
+ class ListNode {
     int value;
     ListNode next;
     ListNode(int value) {
