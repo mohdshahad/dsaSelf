@@ -1,9 +1,9 @@
 package Stacks;
 
-class MyStack {
+public class MyStack {
         ListNode head;
         int len;
-        int peek() {
+        public int peek() {
             if (len == 0 || head == null) {
                 System.out.println("Empty!");
                 return -1;
@@ -11,7 +11,7 @@ class MyStack {
             return head.value;
         }
 
-        int pop() {
+        public int pop() {
             if (len == 0 || head == null) {
                 System.out.println("Empty!");
                 return -1;
@@ -22,7 +22,7 @@ class MyStack {
             return x;
         }
 
-        void push(int ele) {
+        public void push(int ele) {
             ListNode newNode = new ListNode(ele);
             if (len == 0) {
                 head = newNode;
@@ -33,10 +33,10 @@ class MyStack {
             }
             len++;
         }
-        int size() {
+        public int size() {
             return len;
         }
-        void display() {
+        public void display() {
             ListNode temp = head;
             while (temp != null) {
                 System.out.println(temp.value);

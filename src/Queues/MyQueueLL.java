@@ -6,13 +6,13 @@ public class MyQueueLL {
     ListNode head;
     ListNode tail;
     int size;
-    MyQueueLL() {
+    public MyQueueLL() {
         this.size = 0;
     }
-    boolean isEmpty() {
+    public boolean isEmpty() {
         return size == 0;
     }
-    void add(int x) {
+    public void add(int x) {
         ListNode newNode = new ListNode(x);
         if (head == null) {
             head = newNode;
@@ -29,7 +29,7 @@ public class MyQueueLL {
         tail = newNode;
         size++;
     }
-    int remove() {
+    public int remove() {
         if (isEmpty()) throw new NoSuchElementException("Q is empty!");
         int x = head.value;
         head = head.next;
@@ -37,13 +37,13 @@ public class MyQueueLL {
         size--;
         return x;
     }
-    int peek() {
+    public int peek() {
         return head.value;
     }
-    int size() {
+    public int size() {
         return size;
     }
-    void display() {
+    public void display() {
         ListNode temp = head;
         System.out.print("[ ");
 
@@ -54,7 +54,6 @@ public class MyQueueLL {
                 System.out.print(", ");
             }
         }
-
         System.out.print(" ]");
     }
 }
